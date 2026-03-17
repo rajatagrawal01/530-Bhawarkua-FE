@@ -1,0 +1,15 @@
+:root{
+    --customColor:blue;
+}
+
+h1{
+    color: var(--customColor);
+    font-size: var(--customColor);
+}
+
+h2{
+    color: var(--customColor);
+}
+h3{
+    color: var(--customColor);
+}

@@ -1,0 +1,14 @@
+syntax
+html,body,head
+heading, paragraph,a
+text formats
+media tags, image,vid,aud,iframe
+marque
+div,span,
+
+
+
+list
+input
+table
+form

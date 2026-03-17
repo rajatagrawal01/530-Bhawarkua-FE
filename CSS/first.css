@@ -1,0 +1,26 @@
+/* 
+* {
+  color: green;
+} 
+ */
+
+/*  
+h1{
+  color: green;
+} 
+  */
+
+.one{
+  color: green;
+}
+.two{
+  color: red;
+}
+
+.first{
+  background-color: red;
+}
+
+#first{
+  background-color: red;
+}

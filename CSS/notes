@@ -1,0 +1,28 @@
+Style declaration
+element selector
+css property
+property value
+
+
+<tagname style="property:value"></tagname>
+
+<style>
+    element{
+        property:value
+    }
+</style>
+
+
+first.css-
+element{
+        property:value
+    }
+
+first.html
+<link rel="stylesheet" href="first.css">
+
+
+
+Developer's Priority:
+
+External>Internal>Inline
