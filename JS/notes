@@ -1,0 +1,15 @@
+if(condition1){
+    operation 1
+}
+else if (condition 2){
+    operation 2
+}
+else{
+    operation 3
+}
+
+if
+if else
+if  else if  else
+if else if
+else - not possible
