@@ -13,3 +13,14 @@ if else
 if  else if  else
 if else if
 else - not possible
+
+
+
+Definition of a function
+function functionName(parameters){
+    logic
+}
+
+calling of a function
+
+functionName(argument)
