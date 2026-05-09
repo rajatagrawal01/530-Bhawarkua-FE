@@ -5,33 +5,34 @@ let capchk= document.getElementById("capchk")
 let numchk= document.getElementById("numchk")
 let spclchk= document.getElementById("spclchk")
 
+// let myForm=document.getElementById('myForm')
 
+// myForm.addEventListener("submit",function(e){
 password.addEventListener("keyup",function(){
     let value=password.value;
     // console.log(value);
-
     if(value.length<3){
-        message.innerText="Enter Greater than 5"
+        message.innerText="Enter Greater than 3"
         message.style.color="red"
     }
-    else if(!value.match(/[0-9]/)){
+    if(!value.match(/[0-9]/)){
         message.innerText="Enter a number"
         message.style.color="red"
     }
-    else if(!value.match(/[A-Z]/)){
+    if(!value.match(/[A-Z]/)){
         message.innerText="Enter a Capital letter"
         message.style.color="red"
     }
-    else if(!value.match(/[a-z]/)){
+    if(!value.match(/[a-z]/)){
         message.innerText="Enter a small letter"
         message.style.color="red"
     }
-    else if(!value.match(/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/)){
+    if(!value.match(/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/)){
         message.innerText="Enter a Special character"
         message.style.color="red"
     }
 
-    else if(!value.match(/[A-Z]/) || !value.match(/[0-9]/) || !value.match(/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/)){
+    if(!value.match(/[A-Z]/) || !value.match(/[0-9]/) || !value.match(/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/)){
         message.innerText="Weak Password"
         message.style.color="red"
     }
@@ -46,7 +47,12 @@ password.addEventListener("keyup",function(){
 var button = document.getElementById("btn")
 
 button.addEventListener("click",()=>{
-    alert("Hello")
+    if (password.type === "password") {
+    password.type = "text";
+    }
+    else{
+    password.type = "password";
+}
 })
 
 button.onclick=()=>{
@@ -58,3 +64,9 @@ button.onclick=()=>{
 // Real time validation back and forth
 // On sumbit
 // Password visibility
+
+
+
+// button.addEventListener('click',()=>{
+    
+// })
