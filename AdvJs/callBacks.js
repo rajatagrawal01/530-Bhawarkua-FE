@@ -1,5 +1,5 @@
 // function welcome(StuName,callback){
-//     console.log(`Hello ${StuName}`);
+//     console.log('Hello ',StuName);
 //     callback();
 // }
 
@@ -11,8 +11,8 @@
 //     console.log("How are you?");
 // }
 
-// welcome("Sakshi",bye)
-// welcome("Sakshi",greet)
+// welcome("Nikita",bye)
+// welcome("Nikita",greet)
 
 // console.log("Start");
 
@@ -33,3 +33,21 @@
 // .then((data)=>console.log(data))
 // .catch((err)=>console.log("Error is :",err))
 
+
+
+
+
+// function hello(a,b,callback){
+//     callback(a,b);
+// }
+
+// function add(x,y){
+//     console.log(x+y);
+// }
+
+
+// hello(2,3,add);
+
+function ajsgfaksjd(a,b,()={
+    
+})
