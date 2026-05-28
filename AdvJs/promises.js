@@ -1,21 +1,21 @@
-// Defining a promise
-let promise = new Promise((resolve, reject) => {
-  let success = true;
-  if (success) {
-    resolve("Task completed");
-  } else {
-    reject("Task failed");
-  }
-});
+// // Defining a promise
+// let promise = new Promise((resolve, reject) => {
+//   let success = true;
+//   if (success) {
+//     resolve("Task completed");
+//   } else {
+//     reject("Task failed");
+//   }
+// });
 
-// Using a promise
-promise
-  .then((result) => {
-    console.log(result);
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+// // Using a promise
+// promise
+//   .then((result) => {
+//     console.log(result);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
 
 // Example of a promise
 
@@ -36,22 +36,31 @@ promise
 // .catch((error)=>{console.log(error);})
 
 // API Fetch
+fetch("https://jsonplaceholder.typicode.com/users")
+.then((response)=>response.json())
+.then((data)=>{
+  console.log(data);
+})
+.catch((err)=>console.log("Error is :",err))
+
+// Async Await
+
+// async function fetchData() {
+//   try {
+//     let response = await fetch("https://jsonplaceholder.typicode.com/users");
+//     let data = await response.json();
+    
+//     console.log(data);
+//   } catch (err) {
+//     console.log("Error hai bhai", err);
+//   }
+// }
+
+// fetchData()
+
+
+
 // fetch("https://jsonplaceholder.typicode.com/users")
 // .then((response)=>response.json())
 // .then((data)=>console.log(data))
 // .catch((err)=>console.log("Error is :",err))
-
-// Async Await
-
-async function fetchData() {
-  try {
-    let response = await fetch("https://jsonplaceholder.typicode.com/users");
-    let data = await response.json();
-    
-    console.log(data);
-  } catch (err) {
-    console.log("Error hai bhai", err);
-  }
-}
-
-// fetchData()
