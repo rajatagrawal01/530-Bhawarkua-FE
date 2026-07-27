@@ -1,16 +1,13 @@
-// "Hello Sakshi" - Normal String
+// "Hello Class" - Normal String
 
-// `Hello Sakshi` - Template String
+// `Hello Class` - Template String
 
-// var stuName = "Sakshi"
+// var stuName = "Class"
 // var greet = "How are you"
 
 // // console.log("Hello ",stuName, "Greetings: ", greet);
 
 // console.log(`Hello ${stuName} Greetings ${greet}`);
-
-
-
 
 // console.log("Hello "+a+greet); - Normal String
 
@@ -22,10 +19,10 @@
 // console.log(`The sum of ${a} and ${b} is ${a+b}`);
 
 
-// let text =  `<div>
-//         <h1>Hello ${stuName}</h1>
-//         <p>${greet}</p>
-//     </div>`
+let text =  `<div>
+        <h1>Hello ${stuName}</h1>
+        <p>${greet}</p>
+    </div>`
 
 //     console.log(text);
 
@@ -34,8 +31,13 @@
 //     return strings[0] + (value+1)
 // }
 
-// // var stuName = "Sakshi"
+// // var stuName = "Class"
 
 // var age=25
 
 // console.log(tag`Hello ${age}`);
+
+
+var name="Rajat"
+
+console.log(`Your name is ${name}`);
