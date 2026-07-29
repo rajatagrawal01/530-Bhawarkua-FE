@@ -1,0 +1,12 @@
+#paragraph{
+    font-family:'Times New Roman', Times, serif;
+    font-size:100px;
+    font-weight:bolder;
+    font-style: italic;
+    color: red;
+    
+    text-decoration: underline double yellow;
+    text-indent: 100px;
+    text-shadow: 5px 5px black;
+    text-transform: capitalize;
+}

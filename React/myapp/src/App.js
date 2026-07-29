@@ -1,19 +1,16 @@
 import logo from './logo.svg';
-import './App.css';
+import linkedin from './assets/images.jpg';
+import Animation from './Components/Animation'
+import Box from './Components/Box'
+import Fonts from './Components/Fonts'
+import './Components/Animation.css'
+
 
 function App() {
-  console.log("Hello Class");
-
   return (
     <>
-      <div className="App">
-        <h1>Hello Class</h1>
-      </div>
-      <div>
-      </div>
+     <h1>Hello</h1>
     </>
-
-
   );
 }
 
