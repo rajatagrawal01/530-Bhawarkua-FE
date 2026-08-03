@@ -1,15 +1,15 @@
 import logo from './logo.svg';
 import linkedin from './assets/images.jpg';
-import Animation from './Components/Animation'
-import Box from './Components/Box'
-import Fonts from './Components/Fonts'
-import './Components/Animation.css'
+import Greet from './Components/Greet';
 
 
 function App() {
   return (
     <>
-     <h1>Hello</h1>
+      <Greet course="React" campus="Bhawarkua" photo={logo}/>
+      <Greet course="SQL" campus="VijayNagar" photo={linkedin}/>
+      <Greet course="Python" campus="Ujjain"/>
+      <Greet course="React" campus="Vadodara"/>
     </>
   );
 }
