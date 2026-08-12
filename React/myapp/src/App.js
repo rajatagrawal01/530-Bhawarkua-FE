@@ -7,17 +7,9 @@ import { useState } from 'react';
 function App() {
   const [visibility, setVisibility] = useState(true);
   return (
-    // <>
-    //   <Greet course="React" campus="Bhawarkua" photo={logo}/>
-    //   <Greet course="SQL" campus="VijayNagar" photo={linkedin}/>
-    //   <Greet course="Python" campus="Ujjain"/>
-    //   <Greet course="React" campus="Vadodara"/>
-    // </>
-
-
     <>
       {visibility && <StateHook />}
-      <button onClick={() => setVisibility(!visibility)}> Click Here</button>
+      <button onClick={() => setVisibility(!visibility)}>Click Here</button>
     </>
   );
 }
