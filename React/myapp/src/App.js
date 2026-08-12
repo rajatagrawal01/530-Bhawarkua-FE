@@ -2,9 +2,10 @@ import logo from './logo.svg';
 import linkedin from './assets/images.jpg';
 import Greet from './Components/Greet';
 import StateHook from './Components/StateHook';
+import { useState } from 'react';
 
 function App() {
-
+  const [visibility, setVisibility] = useState(true);
   return (
     // <>
     //   <Greet course="React" campus="Bhawarkua" photo={logo}/>
@@ -13,8 +14,10 @@ function App() {
     //   <Greet course="React" campus="Vadodara"/>
     // </>
 
+
     <>
-      <StateHook/>
+      {visibility && <StateHook />}
+      <button onClick={() => setVisibility(!visibility)}> Click Here</button>
     </>
   );
 }
