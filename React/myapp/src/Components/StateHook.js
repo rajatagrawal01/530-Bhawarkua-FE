@@ -5,7 +5,6 @@ export default function StateHook() {
     // const [name,setName] = useState("");
     // const [age,setAge] = useState(0);
     const [names,setNames] = useState(["Rahul", "Rajesh","Rohan","Raj"])
-    
 
     // function increase(){
     //     setCount(count+1);

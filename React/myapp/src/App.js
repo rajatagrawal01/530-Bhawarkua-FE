@@ -3,6 +3,7 @@ import linkedin from './assets/images.jpg';
 import Greet from './Components/Greet';
 import StateHook from './Components/StateHook';
 import { useState } from 'react';
+import StateObj from './Components/StateObj';
 
 function App() {
   // const [visibility, setVisibility] = useState(true);
@@ -10,7 +11,8 @@ function App() {
     <>
       {/* {visibility && <StateHook />}
       <button onClick={() => setVisibility(!visibility)}>Click Here</button> */}
-      <StateHook/>
+      {/* <StateHook/> */}
+      <StateObj/>
     </>
   );
 }
