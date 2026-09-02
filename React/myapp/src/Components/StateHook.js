@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 
 export default function StateHook() {
     // const [count, setCount] = useState(0);
@@ -17,6 +17,10 @@ export default function StateHook() {
     function addName(){
         setNames([...names,"Rajat"]);
     }
+
+    useEffect(() => {
+        console.log("State hook");
+    },[]);
     return (
         // <div>
         //     <h1>{count}</h1>
