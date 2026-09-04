@@ -2,22 +2,28 @@ import React, { useEffect, useState } from 'react'
 
 export default function Effect() {
     const [count, setCount] = useState(0);
-     const [name,setName] = useState("");
+    const [name,setName] = useState("");
 
     function increase() {
         setCount(count + 1);
     }
-
     function decrease() {
         setCount(count - 1);
     }
 
+    useEffect(()=>{
+        console.log("Component Mounted");
+        return ()=>{
+            console.log("Component chala gya");
+        }
+    },[])
     useEffect(() => {
         console.log("Count Changed");
     },[count]);
     useEffect(() => {
         console.log("Name Changed");
     },[name]);
+
 
     return (
         <div>

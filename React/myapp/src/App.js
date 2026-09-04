@@ -7,14 +7,19 @@ import StateObj from './Components/StateObj';
 import Effect from './Components/Effect';
 
 function App() {
-  // const [visibility, setVisibility] = useState(true);
+  const [visibility, setVisibility] = useState(true);
   return (
     <>
       {/* {visibility && <StateHook />}
       <button onClick={() => setVisibility(!visibility)}>Click Here</button> */}
       {/* <StateHook/> */}
       {/* <StateObj/> */}
-      <Effect/>
+      <button onClick={()=>setVisibility(!visibility)}>Mount/Unmount Component</button>
+      {/* <button onClick={()=>setVisibility(true)}>Mount Component</button> */}
+      
+
+      {visibility && <Effect/>}
+
     </>
   );
 }
