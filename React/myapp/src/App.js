@@ -5,6 +5,7 @@ import StateHook from './Components/StateHook';
 import { useState } from 'react';
 import StateObj from './Components/StateObj';
 import Effect from './Components/Effect';
+import ChildOne from './propDrilling/ChildOne';
 
 function App() {
   const [visibility, setVisibility] = useState(true);
@@ -14,12 +15,12 @@ function App() {
       <button onClick={() => setVisibility(!visibility)}>Click Here</button> */}
       {/* <StateHook/> */}
       {/* <StateObj/> */}
-      <button onClick={()=>setVisibility(!visibility)}>Mount/Unmount Component</button>
+      {/* <button onClick={()=>setVisibility(!visibility)}>Mount/Unmount Component</button> */}
       {/* <button onClick={()=>setVisibility(true)}>Mount Component</button> */}
       
+      {/* {visibility && <Effect/>} */}
 
-      {visibility && <Effect/>}
-
+      <ChildOne/>
     </>
   );
 }
