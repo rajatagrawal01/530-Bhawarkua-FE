@@ -6,9 +6,12 @@ import { useState } from 'react';
 import StateObj from './Components/StateObj';
 import Effect from './Components/Effect';
 import ChildOne from './propDrilling/ChildOne';
+import APICall from './APICall';
 
 function App() {
-  const [visibility, setVisibility] = useState(true);
+  // const [visibility, setVisibility] = useState(true);
+  // console.log("First app");
+  
   return (
     <>
       {/* {visibility && <StateHook />}
@@ -20,7 +23,8 @@ function App() {
       
       {/* {visibility && <Effect/>} */}
 
-      <ChildOne/>
+      {/* <ChildOne/> */}
+      <APICall/>
     </>
   );
 }
