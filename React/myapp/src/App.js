@@ -1,12 +1,13 @@
-import logo from './logo.svg';
-import linkedin from './assets/images.jpg';
-import Greet from './Components/Greet';
-import StateHook from './Components/StateHook';
-import { useState } from 'react';
-import StateObj from './Components/StateObj';
-import Effect from './Components/Effect';
-import ChildOne from './propDrilling/ChildOne';
-import APICall from './APICall';
+// import logo from './logo.svg';
+// import linkedin from './assets/images.jpg';
+// import Greet from './Components/Greet';
+// import StateHook from './Components/StateHook';
+// import { useState } from 'react';
+// import StateObj from './Components/StateObj';
+// import Effect from './Components/Effect';
+// import ChildOne from './propDrilling/ChildOne';
+// import APICall from './APICall';
+import AdvAPICall from './AdvAPICall';
 
 function App() {
   // const [visibility, setVisibility] = useState(true);
@@ -24,7 +25,8 @@ function App() {
       {/* {visibility && <Effect/>} */}
 
       {/* <ChildOne/> */}
-      <APICall/>
+      {/* <APICall/> */}
+      <AdvAPICall/>
     </>
   );
 }
