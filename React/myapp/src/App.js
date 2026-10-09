@@ -7,12 +7,14 @@
 // import Effect from './Components/Effect';
 // import ChildOne from './propDrilling/ChildOne';
 // import APICall from './APICall';
-import AdvAPICall from './AdvAPICall';
+// import AdvAPICall from './AdvAPICall';
+import { BrowserRouter } from 'react-router-dom';
+import Redirect from './Routes/Redirect'
 
 function App() {
   // const [visibility, setVisibility] = useState(true);
   // console.log("First app");
-  
+
   return (
     <>
       {/* {visibility && <StateHook />}
@@ -21,12 +23,15 @@ function App() {
       {/* <StateObj/> */}
       {/* <button onClick={()=>setVisibility(!visibility)}>Mount/Unmount Component</button> */}
       {/* <button onClick={()=>setVisibility(true)}>Mount Component</button> */}
-      
+
       {/* {visibility && <Effect/>} */}
 
       {/* <ChildOne/> */}
       {/* <APICall/> */}
-      <AdvAPICall/>
+      {/* <AdvAPICall/> */}
+      <BrowserRouter>
+        <Redirect />
+      </BrowserRouter>
     </>
   );
 }
